@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
+import { Housinglocation } from '../housinglocation';
 
 @Component({
   selector: 'app-home',
@@ -22,4 +23,14 @@ import { HousingLocationComponent } from '../housing-location/housing-location.c
 })
 export class HomeComponent {
 
+  housingLocation : Housinglocation = {
+    id        : 99,
+    city      : 'Kalyan',
+    name      : 'Krishnaprabha',
+    state     : 'Kerala',
+    photo     : 'assets/example-house.jpg',
+    availableUnits : 99,
+    wifi      : true,
+    laundry   : false
+  }
 }
